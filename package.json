@@ -1,0 +1,26 @@
+{
+  "name": "midi-led",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "dev": "tsc -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^15.6.1",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.2"
+  },
+  "dependencies": {
+    "@types/lodash": "^4.14.178",
+    "easymidi": "^2.1.0",
+    "lodash": "^4.17.21",
+    "nanoseconds": "^1.0.1",
+    "node-pixel": "^0.11.0",
+    "prompt-sync": "^4.2.0"
+  },
+  "keywords": [],
+  "description": ""
+}
