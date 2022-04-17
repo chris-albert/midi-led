@@ -1,3 +1,3 @@
 ```
-npm run ts src/bpm.ts
+npm start
 ```
