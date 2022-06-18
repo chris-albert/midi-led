@@ -12,10 +12,12 @@ export const RealEDControl: () => Promise<LEDControl> = () => {
       const board = new five.Board(opts)
       board.on('ready', () => {
 
+
         const strip = new pixel.Strip({
           board: board,
-          controller: "I2CBACKPACK",
-          strips: [4, 6, 8]
+          controller: "FIRMATA",
+          strips: [ {pin: 6, length: 4}, ], // this is preferred form for definition
+          gamma: 2.8, // set to a gamma that works nicely for WS2812
         });
 
         strip.on("ready", () => {

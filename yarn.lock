@@ -88,10 +88,10 @@
   resolved "https://registry.yarnpkg.com/@tsconfig/node16/-/node16-1.0.1.tgz#a6ca6a9a0ff366af433f42f5f0e124794ff6b8f1"
   integrity sha512-FTgBI767POY/lKNDNbIzgAX6miIDBs6NTCbdlDb8TrWovHsSvaVIZDlTqym29C6UqhzwcJx4CYr+AlrMywA0cA==
 
-"@types/lodash@^4.14.178":
-  version "4.14.178"
-  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.178.tgz#341f6d2247db528d4a13ddbb374bcdc80406f4f8"
-  integrity sha512-0d5Wd09ItQWH1qFbEyQ7oTQ3GZrMfth5JkbN3EvTKLXcHLRDSXeLnlvlOn0wvxVIwK5o2M8JzP/OWz7T3NRsbw==
+"@types/lodash@^4.14.182":
+  version "4.14.182"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.182.tgz#05301a4d5e62963227eaafe0ce04dd77c54ea5c2"
+  integrity sha512-/THyiqyQAP9AfARo4pF+aCGcyiQ94tX/Is2I7HofNRqoYLgN1PBoOWu2/zTA5zMxzP5EFutMtWtGAFRKUe961Q==
 
 "@types/node@^15.6.1":
   version "15.6.1"
@@ -159,6 +159,13 @@ bl@^4.0.3:
     inherits "^2.0.4"
     readable-stream "^3.4.0"
 
+blinkstick@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/blinkstick/-/blinkstick-1.2.0.tgz#f68a04f28c9286c33ca4acbf538a8fe1004d82d4"
+  integrity sha512-ULt1mhBgRk2IFT7wANs+Z3zOREiGW237xEeSZdXh8DJ5V3Yd/lAlMeBh4Koeh1WdWQYUqEfDcLQL5Ux5h8TObg==
+  dependencies:
+    node-hid "1.1.0"
+
 browser-serialport@latest:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/browser-serialport/-/browser-serialport-2.1.0.tgz#fb84077e84b9bbbb84935aae1fcac9ce6105dc7f"
@@ -225,6 +232,11 @@ color-string@^1.5.3:
   dependencies:
     color-name "^1.0.0"
     simple-swizzle "^0.2.2"
+
+colorsys@^1.0.22:
+  version "1.0.22"
+  resolved "https://registry.yarnpkg.com/colorsys/-/colorsys-1.0.22.tgz#e08459b297de7d4da4a53c26c3555f5a9609ad88"
+  integrity sha512-KCqF23oqkOD0IUCTLCl0obwGIMyeGFlNWuJ4oRRVKmawvKQeb3x5UvajVeH9AShZWU9hNaIhjXeTGw3iPNtl/Q==
 
 console-control-strings@^1.0.0, console-control-strings@~1.1.0:
   version "1.1.0"
@@ -484,6 +496,15 @@ node-abi@^2.7.0:
   dependencies:
     semver "^5.4.1"
 
+node-hid@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/node-hid/-/node-hid-1.1.0.tgz#944adb5a4be8eb21f8b5d2e39583120186a4425b"
+  integrity sha512-XDaze6jvllflrXtSWTnwayLGkhko48cYerT33sTRcTbWjifaksRFlVFOhQT8lzcfUqAlxxxb9S5TMT0U293ebw==
+  dependencies:
+    bindings "^1.5.0"
+    nan "^2.14.0"
+    prebuild-install "^5.3.3"
+
 node-pixel@^0.11.0:
   version "0.11.0"
   resolved "https://registry.yarnpkg.com/node-pixel/-/node-pixel-0.11.0.tgz#e65aa44633343aee3444533ef085deb6bb93ec89"
@@ -523,7 +544,7 @@ once@^1.3.1, once@^1.4.0:
   dependencies:
     wrappy "1"
 
-prebuild-install@^5.3.0:
+prebuild-install@^5.3.0, prebuild-install@^5.3.3:
   version "5.3.6"
   resolved "https://registry.yarnpkg.com/prebuild-install/-/prebuild-install-5.3.6.tgz#7c225568d864c71d89d07f8796042733a3f54291"
   integrity sha512-s8Aai8++QQGi4sSbs/M1Qku62PFK49Jm1CbgXklGz4nmHveDq0wzJkg7Na5QbnO1uNH8K7iqx2EQ/mV0MZEmOg==

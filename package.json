@@ -4,6 +4,8 @@
   "main": "index.js",
   "scripts": {
     "start": "ts-node src/index.ts",
+    "blinkstick": "ts-node src/blinkstick.ts",
+    "strobe": "ts-node src/led/strobe.ts",
     "dev": "tsc -w"
   },
   "author": "",
@@ -14,7 +16,9 @@
     "typescript": "^4.3.2"
   },
   "dependencies": {
-    "@types/lodash": "^4.14.178",
+    "@types/lodash": "^4.14.182",
+    "blinkstick": "^1.2.0",
+    "colorsys": "^1.0.22",
     "easymidi": "^2.1.0",
     "johnny-five": "^2.1.0",
     "lodash": "^4.17.21",
