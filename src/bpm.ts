@@ -1,4 +1,4 @@
-import {getDevice} from "./device";
+import {getDevice} from "./midi/device";
 const nano = require('nanoseconds')
 
 const input = getDevice(true)

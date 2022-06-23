@@ -1,5 +1,6 @@
 import {BlinkStick, findFirst, ofRGB} from './types/blinkstick'
-import {rainbow} from "./animations";
+import {sleep} from "./animations";
+import {fromBlinkStick} from "./led/LedStrip";
 
 const program: () => void = async () => {
   const led = await findFirst()
@@ -9,9 +10,16 @@ const program: () => void = async () => {
 }
 
 const ledProgram = async (led: BlinkStick) => {
-  await led.off(0)
-  await led.off(1)
-  await rainbow(led)
+  const strip = fromBlinkStick(led, 16)
+  await strip.setColor(ofRGB(255, 0, 0))
+  await sleep(2000)
+  await strip.setColor(ofRGB(0, 255, 0))
+  await sleep(2000)
+  await strip.setColor(ofRGB(0, 0, 255))
+  await sleep(2000)
+  await strip.setColor(ofRGB(255, 255, 255))
+  await sleep(2000)
+  await strip.off()
 }
 
 program()

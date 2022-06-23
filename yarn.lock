@@ -93,6 +93,11 @@
   resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.182.tgz#05301a4d5e62963227eaafe0ce04dd77c54ea5c2"
   integrity sha512-/THyiqyQAP9AfARo4pF+aCGcyiQ94tX/Is2I7HofNRqoYLgN1PBoOWu2/zTA5zMxzP5EFutMtWtGAFRKUe961Q==
 
+"@types/node@*":
+  version "18.0.0"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.0.0.tgz#67c7b724e1bcdd7a8821ce0d5ee184d3b4dd525a"
+  integrity sha512-cHlGmko4gWLVI27cGJntjs/Sj8th9aYwplmZFwmmgYQQvL5NUsgVJG7OddLvNfLqYS31KFN0s3qlaD9qCaxACA==
+
 "@types/node@^15.6.1":
   version "15.6.1"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-15.6.1.tgz#32d43390d5c62c5b6ec486a9bc9c59544de39a08"
@@ -798,6 +803,13 @@ ts-node@^10.0.0:
     make-error "^1.1.1"
     source-map-support "^0.5.17"
     yn "3.1.1"
+
+ts-stream@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/ts-stream/-/ts-stream-3.0.0.tgz#7f3c1749a8345695cb43ca10cf64c96908f909dd"
+  integrity sha512-inSYkFNWYRDKu+fEriDeTV8KP6BLx/CujUb047sIuMH1YUZcUdjYpwiGsXVyWIEREOFb02e0z6b/cK8lG1i4cw==
+  dependencies:
+    "@types/node" "*"
 
 tunnel-agent@^0.6.0:
   version "0.6.0"
